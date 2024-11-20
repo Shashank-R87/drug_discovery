@@ -7,6 +7,25 @@ Inhibiting DHFR can disrupt the folate pathway, making it a potential target for
 
 Despite most of the papers using Random Forest Regressor, the proposed approach compares 42 regression models using Lazy Predict module, the best model has been chosen based on the highest R2 score and RMSE score. Feature selection is done using the variance threshold method with a threshold value of 0.16. This helps in achieving higher computational speed and avoids overfitting. It was found that Gradient Boosting Regressor with the best hyper-tuning parameters had the highest R2 score with 0.40 and had the lowest RMSE of 1.24.
 
+### Docker
+
+Just want to use the tool and not the tool?
+
+Don't want to pull the repo and check out the code?
+
+We got you covered with our docker images
+
+```bash
+docker pull shashankr87/drug_discovery_api
+docker run -p 8000:8000 --name drug_discovery_frontend shashankr87/drug_discovery_api
+```
+```bash
+docker pull shashankr87/drug_discovery
+docker run -p 3000:3000 --name drug_discovery_backend shashankr87/drug_discovery
+```
+
+Open http://localhost:3000 and you are ready to go!
+
 ## Gallery
 ![image](https://github.com/user-attachments/assets/aef116a1-42ab-4772-b937-4f2dbce0d4dc)
 ![image](https://github.com/user-attachments/assets/beccc1da-4bc8-45e3-81ad-ee9779c3e957)
